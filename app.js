@@ -33,6 +33,19 @@ const swaggerOptions = {
             version: "1.0.0",
             description: "Documentation de l'API"
         },
+        components: {
+            schemas: {
+                Formation: {
+                    type: "object",
+                    properties: {
+                        nomForm: {
+                            type: "string",
+                            description: "Nom de la formation"
+                        }
+                    }
+                }
+            }
+        },
         basePath: "/"
     },
     apis: ["app.js"]
